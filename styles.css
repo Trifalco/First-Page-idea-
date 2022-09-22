@@ -1,0 +1,411 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  .header{
+    height: 80px;
+    position:fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+
+    background-color: black;
+    display: grid;
+    /* me muestra mi pagina separado por 8 secciones veticalmente*/
+    grid-template-columns: repeat(8, 1fr);
+    text-align: center;
+    border-style: inset;
+    border-color: green;
+
+}
+
+.navbar .logo {
+
+    width: 120px;
+    height: 90px;
+    /* hago que mi logo se ubique en la grilla 2 y 3*/
+    grid-column: 2/2;
+
+}
+
+.navbar .menu {
+
+    position: fidex;
+    font-size: 15px;
+    grid-column: 3/7;
+    /* se ponen uno al lado del otro*/
+    display: flex;
+    /* me justifica el contenido y el space-around me lo separa uno del otro*/
+    justify-content: space-around;
+
+}
+
+.navbar .menu li {
+    /* me quita los asteriscos de la li*/
+    list-style: none;
+    margin: auto;
+
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.navbar .menu a:hover {
+
+    color: green;
+}
+
+
+.navbar .shopping {
+    grid-column: 8/9;
+    color: white;
+    margin: auto;
+
+}
+
+.navbar .menu-bar {
+    display: none;
+    color: white;
+}
+
+/* *********section main*************/
+
+
+.hero {
+    height: 86vh;
+    background-image: linear-gradient(rgba(16,16,16,.8),rgba(16,16,16,.8)),url(/img/escri.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8,1fr);
+    
+}
+
+.hero .info-content {
+
+    grid-column: 7/10 ;
+    grid-row: 3/7;
+    color: green;
+}
+
+.hero h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     
+    /* para adelgazar la letra*/
+    font-weight: 300;
+}
+
+.hero h1 {
+    
+    
+    line-height:1em;
+    color: black;
+}
+
+.hero p {
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.btn{
+    font-size: 1em;
+    background-color: white;
+    color:green;
+    padding: 10px;
+    border: 3px solid green;
+    border-radius: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+    justify-content: center;
+    
+}
+ .btn:hover{
+    background-color: black;
+    color:white;
+    border: 3px solid green;
+}
+.footer
+{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    display: grid;
+    height: 80px;
+    text-align: center;
+    background-color: black;
+    color: green;
+    grid-template-areas: "listen-online follow-me social-network " ;
+
+}
+.footer .listen-online{
+    grid-template-areas: listen-online;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding:20px;
+    
+    
+    
+}
+.footer .listen-online p{
+    color: blue;
+}
+.footer .listen-online i{
+     
+    font-size: 1.5em;
+    margin-right:15px;
+
+}
+.footer .listen-online i:hover{
+
+    color: black;
+    
+}
+.footer .follow-me{
+    grid-template-areas: follow-me;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding:23px;
+}
+.footer .follow-me i{
+    font-size: 1.5em;
+    margin-right:15px;
+
+}
+.footer .follow-me i:hover{
+    color: white;
+}
+.footer .social-network{
+    grid-template-areas: social-network;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding:23px;
+}
+.footer .social-network i{
+    font-size: 1.5em;
+    margin-right:15px;
+
+}
+.footer .social-network i:hover{
+    color: black;
+}
+.about-me{
+    padding: 5em;
+    display:grid;
+    grid-template-columns: repeat(10,1fr);
+    width: 100vw;
+    align-items: center;
+    background-color:#85929e;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about-me img{
+    margin-top: 20px;
+    width: 100%;
+    grid-column: 1/5;
+    border: 3px solid black
+}
+.about-info{
+    grid-column: 5/10;
+    padding: 1em;
+  
+
+}
+.about-info h2{
+    font-size:2em;
+    color: green;
+    grid-column: 6/20;
+}
+.divider{
+    height: 4px;
+    width: 100px;
+    background-color: blue;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.about-me p{
+    
+    margin-top: 2em;
+    margin-bottom: 2em;
+   
+    color:white;
+}
+
+.portafolio{
+    width: 100vw;
+    height: 130vh;
+    background-color: #191c32;
+    color: white;
+
+}
+.portafolio-headings{
+    width: 100vw;
+    padding: 5em;
+    color: green;
+}
+.portafolio-headings h2{
+    font-size: 2em;
+    margin-top: 20px;
+    
+}
+.portafolio .container{
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.card{
+    width: 300px;
+    background-color: black;
+    height: 550px;
+    margin-right: 3em;
+    margin-left: 3em;
+   
+}
+.card h2{
+    color: green;
+    margin-bottom: 15px;
+}
+.card__img{
+    width: 100%;
+    height: 150px;
+    background-image: url(/img/carpeta.jpg);
+    /* muestra el total de la imagen sin recortar*/
+    background-size: cover;
+}
+.card__title{
+
+   
+    text-align: center;
+    padding: 20px;
+}
+.card__proyects-links{
+
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+.card__proyects-links a{
+    color: white;
+    text-decoration: none;
+}
+.card__proyects-links a:hover{
+    color:green;
+    text-decoration: none;
+}
+.card__proyects-links i{
+    font-size: 1.5em;
+}
+.card .btn{
+    
+    margin: 0 auto;
+    margin: 1em;
+    width: 70%;
+    display: flex;
+}
+.proyect-details-content
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+}
+.card .btn a{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.contact-section{
+    padding: 5em;   
+    display:grid;
+    grid-template-columns: repeat(10,1fr);
+    width: 100vw;
+    align-items: center;
+    background-color:#85929e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contact-headings{
+    color: green;
+    margin-top: 20px;
+}
+
+.container-contact  {
+    
+        margin-top: 40px;
+        width: 100%;
+        grid-column: 1/8;
+    
+}
+.form
+{
+    display: grid;
+    width: 350px;
+    
+   
+}
+
+.form input{
+    margin-bottom: 1em;
+    padding: 5px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: green;
+    
+    
+}
+.form textarea{
+    padding:1.5em;
+    height: 150px;
+    background: none;
+    border-bottom: 1px solid black;
+    color: green;
+    
+    
+    
+}
+.form button{
+
+    width: 350px;
+
+    padding: 2px;
+}
+.contact-form{
+    font-size: 20px;
+    color: green;
+}
+
+
+
+
+
+
+
+

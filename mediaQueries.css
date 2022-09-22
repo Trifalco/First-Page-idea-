@@ -1,0 +1,179 @@
+@media only screen and (max-width:700px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+
+
+        position: -ms-page;
+        width: 100%;
+
+    }
+
+    .navbar {
+        position: relative;
+
+    }
+
+    .navbar .shopping {
+        display: none;
+    }
+
+    .navbar .logo {
+        width: 50px;
+        height: 50px;
+        grid-column: 2/3;
+
+    }
+
+    .navbar .menu-bar {
+        margin-left: 1px;
+        display: grid;
+        grid-column: 8/8;
+        cursor: pointer;
+        font-size: 2em;
+        margin: auto;
+
+
+    }
+
+    .navbar .menu {
+
+        position: absolute;
+        width: 65%;
+        height: 65vh;
+        display: grid;
+        align-items: center;
+        background-color: black;
+        margin-top: 6.8em;
+        transform: translateX(240%);
+        transition: all 1s;
+        border-style: inset;
+        border-color: green;
+        border-radius: 10px;
+    }
+
+    .navbar .menu a {
+        color: white;
+    }
+
+    .navbar .menu li {
+        border-style: inset;
+        padding: 10px;
+        margin: 5px;
+        border-color: cadetblue;
+        background-color: cadetblue;
+
+    }
+
+
+    .navbar .menu-toggle {
+        transform: translateX(130%);
+    }
+
+    /*******Section Main****************/
+
+    .hero {
+        margin-top: 30px;
+        display: grid;
+
+    }
+
+    .hero .info-content {
+
+        grid-column: 2/10;
+        grid-row: 2/2;
+        margin-top: 120px;
+
+    }
+
+    .hero h1 {
+        font-size: 3em;
+        margin-top: 20px;
+    }
+
+    .hero h3 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-right: 80px
+    }
+
+    .hero .btn {
+        display: grid;
+        margin-top: 30px;
+        grid-column: 5/10;
+
+    }
+
+    /* ************Footer***********/
+
+
+
+    .footer .follow-me {
+        display: none;
+    }
+
+    .footer .social-network {
+        text-align: center;
+        background-color: black;
+    }
+
+    .footer .social-network i:hover {
+        color: white;
+    }
+
+    .about-me h2 {
+        margin-top: 20px;
+    }
+
+    .about-me img {
+
+        height:30%;
+       
+        margin-left: 2px;
+        display: grid;
+       
+    }
+    
+    .portafolio{
+        height: 70em;
+    }
+    .card {
+
+        height: 52em;
+        margin: 10px;
+        display: grid;
+
+    }
+    .card .btn{
+        font-size: 10px;
+        width: 50%;
+        
+        
+
+    }
+    .container-contact img{
+       width: 500px;
+       height: 450px;
+       
+    }
+    .contact-form
+    {
+        display: grid;
+        grid-column: 2/5;
+    }
+
+
+
+
+
+
+
+}
